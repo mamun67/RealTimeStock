@@ -42,9 +42,9 @@ public class Login {
         webClient.getOptions().setJavaScriptEnabled(false);    
         final HtmlPage currentPage = webClient.getPage("https://login.yahoo.com/"); //Load page at the STRING address.
         final  HtmlInput username = currentPage.getElementByName("username"); //Find element called loginuser for username
-        username.setValueAttribute("nizamuddin_laskar@yahoo.com"); //Set value for username       
+        username.setValueAttribute("userid"); //Set value for username       
         final  HtmlInput password = currentPage.getElementByName("passwd"); //Find element called loginpassword for password
-        password.setValueAttribute("mtc1701"); //Set value for password   
+        password.setValueAttribute("pass"); //Set value for password   
         WebResponse response1 = currentPage.getWebResponse();
         String content2 = response1.getContentAsString();    
         final HtmlPage page2; 
