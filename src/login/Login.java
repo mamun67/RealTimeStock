@@ -35,7 +35,7 @@ public class Login {
       private static WebClient tremorLogin(WebClient webClient) throws Exception
     {
         webClient.getOptions().setJavaScriptEnabled(false);    
-        final HtmlPage currentPage = webClient.getPage("https://login.yahoo.com/"); //Load page at the STRING address.
+        final HtmlPage currentPage = webClient.getPage("https:"); //Load page at the STRING address.
         final  HtmlInput username = currentPage.getElementByName("username"); //Find element called loginuser for username
         username.setValueAttribute("userid"); //Set value for username       
         final  HtmlInput password = currentPage.getElementByName("passwd"); //Find element called loginpassword for password
