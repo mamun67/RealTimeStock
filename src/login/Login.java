@@ -29,12 +29,7 @@ public class Login {
                WebClient webClient = new WebClient(BrowserVersion.FIREFOX_38); //Initiate a WebClient variable.  
                webClient = tremorLogin(webClient);
                               
-               //After login going to the portfolio page
-              /* Page page = webClient.getPage("https://in.finance.yahoo.com/portfolio/p_6/view/v1");
-               WebResponse response = page.getWebResponse();
-               String content = response.getContentAsString();
-               System.out.println(content);*/
-        
+             
     }
     //Login into Yahoo and return the client(Saves the cookies).
       private static WebClient tremorLogin(WebClient webClient) throws Exception
