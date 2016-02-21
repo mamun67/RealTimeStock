@@ -50,7 +50,7 @@ public class Login {
       
       private static void GenFile(WebClient webClient) throws IOException
       {
-          Page page = webClient.getPage("https://in.finance.yahoo.com/portfolio/p_6/view/v1");
+          Page page = webClient.getPage("porfolio page link");
                WebResponse response = page.getWebResponse();
                String content = response.getContentAsString();
                System.out.println(content);
